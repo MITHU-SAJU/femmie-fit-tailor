@@ -1,0 +1,173 @@
+/* Center the card on the page */
+/* CSS */
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/assets/bimage.jpg");
+  background-size:cover;
+
+}
+
+.contact-container {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+
+
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  /* Add a subtle hover effect to the card */
+  .contact-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style the title */
+  mat-card-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #3f51b5;
+  }
+  
+  /* Style the form fields */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  /* Style the input and textarea fields */
+  input[matInput], textarea[matInput] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Change input and textarea background on focus */
+  input[matInput]:focus, textarea[matInput]:focus {
+    background-color: #fff;
+  }
+  
+  /* Style the submit button */
+  button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Add hover effect to the submit button */
+  button:hover {
+    background-color: #303f9f;
+    transform: translateY(-3px);
+  }
+  
+  /* Add focus effect to the submit button */
+  button:focus {
+    outline: none;
+    background-color: #283593;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%; /* Adjust the gap between icons */
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    width: 15%;
+    height: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .social-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .social-links {
+      gap: 10px;
+    }
+  
+    .social-links a {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .social-links a {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+
+  .sml{
+    background-color: yellow;
+  }
+
+  h1,p{
+   text-align: center;
+  }
+
+  .con{
+    background-color:skyblue;
+  }
+
+  .info1{
+    background-color:cornsilk;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+   
+   }

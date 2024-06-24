@@ -1,0 +1,46 @@
+
+<h1> We highlights the range of tailoring services offered by<b> FEMMIE FIT TAILOR </b>below</h1>
+
+
+<div class="pto">
+
+  <!-- myorder.component.html -->
+<div class="search-bar" [ngClass]="{'slide-in': searchQuery.length > 0}">
+  <input type="text" placeholder="Search by name" [(ngModel)]="searchQuery">
+  <button (click)="searchProduct()">Search</button>
+</div>
+
+  
+  <div class="product-list">
+    <div *ngFor="let product of products" class="product">
+      <img [src]="product.image" alt="{{ product.Name }}" width="100">
+      <div class="product-details">
+        <p><strong>{{ product.Name }}</strong></p>
+      </div> 
+    </div>
+  
+  </div>
+
+  <div class="cont">
+    <h1>FOR MORE DETAILS</h1>
+  
+    <button [@fadeIn]> 
+      <a routerLink="/contact" routerLinkActive="active">contact</a>
+    </button>
+  </div>
+  
+  <div class="info3">
+  
+    <h1>Address:</h1>
+  <p>5/204,Dhavanai vill & post<br>
+   The-Nilgiris-643007.<br></p>
+   
+  
+  <h1>Contact Us</h1>
+  <p>Phone : + 91 8524822544<br>
+  
+  Email id : femmiefit@123.com</p>
+  
+  
+  
+  </div>
